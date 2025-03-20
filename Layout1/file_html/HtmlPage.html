@@ -49,12 +49,24 @@
             border-radius: 3px;
         }
 
+        .button-style {
+            background-color: #000000;
+            color: white;
+            border-radius: 3px;
+        }
+
         main {
         }
 
         #main-product {
             display: flex;
+            justify-content: space-between;
+            gap: 100px;
         }
+
+            #main-product div {
+                flex: 1;
+            }
 
         .subtitle {
             color: #8e8e8e;
@@ -64,6 +76,38 @@
             font-weight: bold;
         }
 
+        .description-main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .img-main {
+            border-radius: 35px;
+            overflow: hidden;
+        }
+
+            .img-main img {
+                width: 100%;
+                max-height: 60vh;
+                object-fit: contain;
+            }
+
+        .products-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /*gap: 20px;*/
+        }
+
+        .product-item {
+            /*flex: 1 1 calc(33.33% -20px);*/
+            width: 300px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
 
         @media (max-width: 800px) {
             .menu-icon {
@@ -72,6 +116,11 @@
 
             nav {
                 display: none;
+            }
+
+            #main-product {
+                flex-direction: column;
+                gap: 0;
             }
         }
     </style>
@@ -108,10 +157,52 @@
                 <span class="subtitle">
                     Body text for describing what this product is
                 </span>
+                <button class="button-style" style="padding:20px; font-size: 20px;">Add to cart</button>
+                <span class="subtitle">
+                    Text box for additional details or fine report
+                </span>
             </div>
         </div>
         <div id="main-related">
-
+            <h3>Related products</h3>
+            <div class="products-list">
+                <div class="product-item">
+                    <img src="img/Image (10).png" alt="#" />
+                    <span class="title">Product</span>
+                    <span class="subtitle">Description of n product</span>
+                    <span class="price">$10.99</span>
+                </div>
+                <div class="product-item">
+                    <img src="img/Image (10).png" alt="#" />
+                    <span class="title">Product</span>
+                    <span class="subtitle">Description of n product</span>
+                    <span class="price">$10.99</span>
+                </div>
+                <div class="product-item">
+                    <img src="img/Image (10).png" alt="#" />
+                    <span class="title">Product</span>
+                    <span class="subtitle">Description of n product</span>
+                    <span class="price">$10.99</span>
+                </div>
+                <div class="product-item">
+                    <img src="img/Image (10).png" alt="#" />
+                    <span class="title">Product</span>
+                    <span class="subtitle">Description of n product</span>
+                    <span class="price">$10.99</span>
+                </div>
+                <div class="product-item">
+                    <img src="img/Image (10).png" alt="#" />
+                    <span class="title">Product</span>
+                    <span class="subtitle">Description of n product</span>
+                    <span class="price">$10.99</span>
+                </div>
+                <div class="product-item">
+                    <img src="img/Image (10).png" alt="#" />
+                    <span class="title">Product</span>
+                    <span class="subtitle">Description of n product</span>
+                    <span class="price">$10.99</span>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
