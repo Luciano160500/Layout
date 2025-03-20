@@ -61,6 +61,7 @@
         #main-product {
             display: flex;
             justify-content: space-between;
+            gap: 100px;
         }
 
             #main-product div {
@@ -81,8 +82,6 @@
             gap: 20px;
         }
 
-
-
         .img-main {
             border-radius: 35px;
             overflow: hidden;
@@ -90,8 +89,8 @@
 
             .img-main img {
                 width: 100%;
-                max-height: 50vh;
-                object-fit: cover;
+                max-height: 60vh;
+                object-fit: contain;
             }
 
         @media (max-width: 800px) {
@@ -101,6 +100,11 @@
 
             nav {
                 display: none;
+            }
+
+            #main-product {
+                flex-direction: column;
+                gap: 0;
             }
         }
     </style>
@@ -137,7 +141,7 @@
                 <span class="subtitle">
                     Body text for describing what this product is
                 </span>
-                <button class="button-style">Add to cart</button>
+                <button class="button-style" style="padding:20px; font-size: 20px;">Add to cart</button>
                 <span class="subtitle">
                     Text box for additional details or fine report
                 </span>
