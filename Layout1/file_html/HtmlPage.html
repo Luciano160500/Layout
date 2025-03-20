@@ -18,12 +18,12 @@
 
         header {
             background-color: aliceblue;
+            margin-bottom: 20px;
         }
 
         .header {
             display: flex;
             justify-content: space-between;
-            padding: 2%;
             align-items: center;
         }
 
@@ -48,6 +48,22 @@
             color: #ffffff;
             border-radius: 3px;
         }
+
+        main {
+        }
+
+        #main-product {
+            display: flex;
+        }
+
+        .subtitle {
+            color: #8e8e8e;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
 
         @media (max-width: 800px) {
             .menu-icon {
@@ -76,8 +92,27 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="spaziatura">
+        <div id="main-product">
+            <div class="img-main">
+                <img src="img/Image.png" alt="#" />
+            </div>
+            <div class="description-main">
+                <h3>Product Name</h3>
+                <span class="subtitle">
+                    Subheading
+                </span>
+                <span class="price">
+                    $10.99
+                </span>
+                <span class="subtitle">
+                    Body text for describing what this product is
+                </span>
+            </div>
+        </div>
+        <div id="main-related">
 
+        </div>
     </main>
     <footer>
     </footer>
