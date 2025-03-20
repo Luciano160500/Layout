@@ -93,6 +93,22 @@
                 object-fit: contain;
             }
 
+        .products-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /*gap: 20px;*/
+        }
+
+        .product-item {
+            /*flex: 1 1 calc(33.33% -20px);*/
+            width: 300px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
         @media (max-width: 800px) {
             .menu-icon {
                 display: block;
