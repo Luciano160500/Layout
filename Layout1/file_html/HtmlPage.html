@@ -7,15 +7,16 @@
     <style>                                     
 
         body {
-            margin:0;
+            margin: 0;
             font-family: 'Ut Sa Ha Gumm Thai', sans-serif;
         }
+
         .spaziatura {
-            margin-left:5%;
-            margin-right:5%;
+            margin-left: 5%;
+            margin-right: 5%;
         }
+
         header {
-            
             background-color: aliceblue;
         }
 
@@ -25,19 +26,38 @@
             padding: 2%;
             align-items: center;
         }
-        nav> ul {
-            
+
+        nav > ul {
         }
+
             nav > ul > li {
                 list-style: none;
                 display: inline;
                 margin-left: 10px;
             }
-            nav > ul>li > button {
-                background-color:#000000;
-                color:white;
-                border-radius:3px;
+
+                nav > ul > li > button {
+                    background-color: #000000;
+                    color: white;
+                    border-radius: 3px;
+                }
+
+        .menu-icon {
+            display: none;
+            background-color: #000000;
+            color: #ffffff;
+            border-radius: 3px;
+        }
+
+        @media (max-width: 800px) {
+            .menu-icon {
+                display: block;
             }
+
+            nav {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -45,6 +65,7 @@
     <header>
         <div class="spaziatura header">
             <h4>Site Name</h4>
+            <button class="menu-icon">☰</button>
             <nav>
                 <ul>
                     <li>Page</li>
