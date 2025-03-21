@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Grid</title>
     <style>
-        .grid-container {
-            display: grid; /* Attiva Grid */
-            grid-template-areas:
+        /*.grid-container {
+            display: grid;*/ /* Attiva Grid */
+        /*grid-template-areas:
                 "header header"
                 "sidebar content"
-                "footer footer"; /* Definisce le aree della griglia */
-            grid-template-columns: 200px 1fr; /* Sidebar fissa, contenuto flessibile */ 
-            grid-template-rows: auto 1fr auto; /* Altezza adattiva */
+                "footer footer";*/ /* Definisce le aree della griglia */
+        /*grid-template-columns: 200px 1fr;*/ /* Sidebar fissa, contenuto flessibile */
+        /*grid-template-rows: auto 1fr auto;*/ /* Altezza adattiva */
+        /*height: 100vh;*/ /* La griglia occupa tutta la viewport */
+        /*}*/
+        .grid-container {
+            /*griglia da 3*/
+            display: grid; /* Attiva Grid */
+            grid-template-areas:
+                "header header header"
+                "sidebar content content"
+                "c1 c2 c3"
+                "footer footer footer"; /* Definisce le aree della griglia */
+            grid-template-columns: 200px 1fr 1fr; /* Sidebar fissa, contenuto flessibile */
+            grid-template-rows: auto 1fr 1fr auto; /* Altezza adattiva */
             height: 100vh; /* La griglia occupa tutta la viewport */
         }
 
@@ -43,6 +55,26 @@
             text-align: center;
             padding: 10px;
         }
+
+        .item {
+          
+            background: #f00;
+            border: solid 2px #000000;
+            padding: 10px;
+
+        }
+
+        .item1 {
+            grid-area: c1;
+        }
+
+        .item2 {
+            grid-area: c2;
+        }
+
+        .item3 {
+            grid-area: c3;
+        }
     </style>
 </head>
 <body>
@@ -51,6 +83,9 @@
         <div class="header">Header</div>
         <div class="sidebar">Sidebar</div>
         <div class="content">Contenuto principale</div>
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
         <div class="footer">Footer</div>
     </div>
 
