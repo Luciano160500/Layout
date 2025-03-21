@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
     <title></title>
-    <style>                                     
+    <style>
 
         body {
             margin: 0;
@@ -102,17 +102,20 @@
 
         .product-item {
             /*flex: 1 1 calc(33.33% -20px);*/
-           flex:1 1 400px;
+            flex: 1 1 400px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
             padding: 10px;
-            min-width:30%;
+            min-width: 30%;
         }
-        .product-item img
-        {
-            width:100%;
 
+            .product-item img {
+                width: 100%;
+            }
+
+        #img2 {
+            display: none;
         }
 
         @media (max-width: 800px) {
@@ -129,27 +132,37 @@
                 gap: 0;
             }
 
+            #img1 {
+                display: none;
+            }
+
+            #img2 {
+                display: block;
+            }
         }
+
+
         /*@media (min-width:651px) and (max-width:1000px)
         {
-           
+
 
             .product-item {*/
-                /*flex: 1 1 calc(33.33% -20px);*/
-                /*width: 50%;
-             
+        /*flex: 1 1 calc(33.33% -20px);*/
+        /*width: 50%;
+
             }
         }
         @media (max-width:650px)
         {
             .product-item {*/
-                /*flex: 1 1 calc(33.33% -20px);*/
-                /*width: 100%;
+        /*flex: 1 1 calc(33.33% -20px);*/
+        /*width: 100%;
                 padding:0;
                 margin-bottom:10px;
-            }       
+            }
 
         }*/
+
     </style>
 </head>
 <body>
@@ -194,38 +207,39 @@
             <h3>Related products</h3>
             <div class="products-list">
                 <div class="product-item">
-                    <img src="https://images.unsplash.com/photo-1604137488398-b1d691713d96?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmlvcmUlMjBmcmVzY298ZW58MHx8MHx8fDA%3D" alt="#" />
+                    <img id="img1" src="img/Image (1).png" alt="#" />
+                    <img id="img2" src="img/Image (7).png" alt="#" />
                     <span class="title">Product</span>
                     <span class="subtitle">Description of n product</span>
                     <span class="price">$10.99</span>
                 </div>
                 <div class="product-item">
-                    <img src="https://images.unsplash.com/photo-1604137488398-b1d691713d96?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmlvcmUlMjBmcmVzY298ZW58MHx8MHx8fDA%3D" alt="#" />
+                    <img src="img/Image (2).png" alt="#" />
                     <span class="title">Product</span>
                     <span class="subtitle">Description of n product</span>
                     <span class="price">$10.99</span>
                 </div>
                 <div class="product-item">
-                    <img src="https://images.unsplash.com/photo-1604137488398-b1d691713d96?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmlvcmUlMjBmcmVzY298ZW58MHx8MHx8fDA%3D" alt="#" />
+                    <img src="img/Image (3).png" alt="#" />
                     <span class="title">Product</span>
                     <span class="subtitle">Description of n product</span>
                     <span class="price">$10.99</span>
                 </div>
                 <div class="product-item">
 
-                    <img src="https://images.unsplash.com/photo-1604137488398-b1d691713d96?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmlvcmUlMjBmcmVzY298ZW58MHx8MHx8fDA%3D" alt="#" />
+                    <img src="img/Image (4).png" alt="#" />
                     <span class="title">Product</span>
                     <span class="subtitle">Description of n product</span>
                     <span class="price">$10.99</span>
                 </div>
                 <div class="product-item">
-                    <img src="https://images.unsplash.com/photo-1604137488398-b1d691713d96?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmlvcmUlMjBmcmVzY298ZW58MHx8MHx8fDA%3D" alt="#" />
+                    <img src="img/Image (5).png" alt="#" />
                     <span class="title">Product</span>
                     <span class="subtitle">Description of n product</span>
                     <span class="price">$10.99</span>
                 </div>
                 <div class="product-item">
-                    <img src="https://images.unsplash.com/photo-1604137488398-b1d691713d96?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmlvcmUlMjBmcmVzY298ZW58MHx8MHx8fDA%3D" alt="#" />
+                    <img src="img/Image (6).png" alt="#" />
                     <span class="title">Product</span>
                     <span class="subtitle">Description of n product</span>
                     <span class="price">$10.99</span>

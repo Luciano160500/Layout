@@ -8,16 +8,17 @@
         .grid-container {
             display: grid; /* Attiva Grid */
             grid-template-areas:
-                "header header"
-                "sidebar content"
-                "footer footer"; /* Definisce le aree della griglia */
-            grid-template-columns: 200px 1fr; /* Sidebar fissa, contenuto flessibile */ 
-            grid-template-rows: auto 1fr auto; /* Altezza adattiva */
+                "t1 t1 t1"
+                "sidebar content content"
+                "c1 c2 c3"
+                "footer footer footer"; /* Definisce le aree della griglia */
+            grid-template-columns: 200px 1fr 1fr ; /* Sidebar fissa, contenuto flessibile */ 
+            grid-template-rows: auto 1fr 1fr auto; /* Altezza adattiva */
             height: 100vh; /* La griglia occupa tutta la viewport */
         }
 
         .header {
-            grid-area: header;
+            grid-area: t1;
             background: #333;
             color: white;
             text-align: center;
@@ -43,6 +44,20 @@
             text-align: center;
             padding: 10px;
         }
+        .item1 {
+            grid-area:c1;
+        }
+        .item2 {
+            grid-area:c2;
+        }
+         .item3 {
+            grid-area:c3;
+        }
+        .item {
+            background: #f00;
+            border:1px solid black;
+            padding:30px;
+        }
     </style>
 </head>
 <body>
@@ -51,7 +66,11 @@
         <div class="header">Header</div>
         <div class="sidebar">Sidebar</div>
         <div class="content">Contenuto principale</div>
+        <div class="item1 item">1</div>
+        <div class="item2 item">2</div>
+        <div class="item3 item">3</div>
         <div class="footer">Footer</div>
+
     </div>
 
 </body>
