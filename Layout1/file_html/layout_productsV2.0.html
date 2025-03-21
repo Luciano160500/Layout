@@ -118,8 +118,45 @@
             display: none;
         }
 
+        li {
+            list-style: none;
+        }
+
         .product-item:hover {
             box-shadow: -1px -1px 8px 1px rgb(176 176 176);
+        }
+
+        footer {
+            background-color: antiquewhite;
+        }
+
+        .footer {
+            display: flex;
+            background-color: antiquewhite;
+            margin-top: 50px;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .grassetto {
+            font-weight: 800;
+        }
+
+        .f-left {
+            flex: 1;
+        }
+
+            .f-left ul {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                gap: 10px;
+            }
+
+        .f-right {
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
         }
 
         @media (max-width: 800px) {
@@ -168,6 +205,9 @@
         }*/
 
     </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -252,6 +292,41 @@
         </div>
     </main>
     <footer>
+        <div class="footer spaziatura">
+            <div class="f-left">
+                <div class="nome-sito">SITO</div>
+                <div class="lista-loghi">
+                    <ul class="lista-footer">
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-facebook"></i></li>
+                        <li><i class="fab fa-discord"></i></li>
+                        <li><i class="fab fa-tiktok"></i></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="f-right">
+                <ul class="lista-footer">
+                    <li class="grassetto">a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                </ul>
+                <ul class="lista-footer">
+                    <li class="grassetto">b</li>
+                    <li>b</li>
+                    <li>b</li>
+                    <li>b</li>
+                </ul>
+                <ul class="lista-footer">
+                    <li class="grassetto">c</li>
+                    <li>c</li>
+                    <li>c</li>
+                    <li>c</li>
+                </ul>
+            </div>
+
+        </div>
     </footer>
 </body>
 </html>
