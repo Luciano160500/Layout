@@ -116,6 +116,16 @@
                 object-fit: cover;
             }
 
+        picture img {
+            width: 100%;
+            height: 30vh;
+            object-fit: cover;
+        }
+
+
+        .product-item:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
 
 
         @media (max-width: 800px) {
@@ -137,10 +147,11 @@
             .product-item img {
                 height: 10vh;
             }
+
+            picture img {
+                height: 10vh;
+            }
         }
-
-
-
     </style>
 </head>
 <body>
@@ -186,9 +197,10 @@
             <div class="products-list">
                 <div class="product-item">
                     <picture>
-                        <source media="(max-width:800px)" srcset="img/Image (2).png">
-                        <img src="img/Image (1).png" alt="#" style="width:auto;">
+                        <source media="(max-width:800px)" srcset="img/Image%20(2).png">
+                        <img src="img/Image (1).png" alt="#">
                     </picture>
+                    <!--<img src="img/Image (1).png" alt="#" />-->
                     <span class="title">Product</span>
                     <span class="subtitle">Description of n product</span>
                     <span class="price">$10.99</span>
